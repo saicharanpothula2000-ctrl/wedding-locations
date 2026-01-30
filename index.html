@@ -14,34 +14,28 @@ body {
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
 
-  /* Background with controlled scaling */
-  background:
-    linear-gradient(
-      rgba(255, 250, 240, 0.85),
-      rgba(255, 250, 240, 0.85)
-    ),
-    url("wedding bg.jpeg");
-
-  background-size: contain;          /* KEY CHANGE */
-  background-position: center center;
+  background: url("wedding bg.jpeg");
+  background-size: cover;          /* Full screen */
+  background-position: center top; /* Preserve artwork */
   background-repeat: no-repeat;
-  background-color: #f6efe6;         /* fallback color */
 
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;         /* NOT center */
+  padding-top: 8vh;                /* Push card down */
 }
 
 .container {
-  background: rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.92); /* Card-only background */
   padding: 40px 30px;
   border-radius: 18px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
   max-width: 420px;
   width: 90%;
   border: 2px solid #d4af37;
+  text-align: center;
 }
+
 
 h1 {
   font-family: 'Playfair Display', serif;
@@ -89,13 +83,13 @@ h1 {
     <p class="subtitle">Select your destination</p>
 
     <a class="button"
-       href="https://maps.app.goo.gl/ViGAuSE8mfD6cL4w6?g_st=ac"
+       href="https://goo.gl/maps/PcHAvhKV6GGLRLGG7"
        target="_blank">
       🏠 Home Location
     </a>
 
     <a class="button"
-       href="https://maps.app.goo.gl/TYzDmUrnGRaag4fN7?g_st=ac"
+       href="https://maps.app.goo.gl/Rum1vRGCsG8UvgAYA"
        target="_blank">
       🏛️ Function Hall Location
     </a>
@@ -105,4 +99,16 @@ h1 {
     </div>
   </div>
 </body>
+
+@media (max-width: 768px) {
+  body {
+    background-position: center top;
+    padding-top: 5vh;
+  }
+
+  .container {
+    padding: 30px 22px;
+  }
+}
+
 </html>
