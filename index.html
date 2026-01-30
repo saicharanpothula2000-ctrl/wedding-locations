@@ -14,18 +14,18 @@ body {
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
 
-  /* Background image */
-  background: 
+  /* Background with controlled scaling */
+  background:
     linear-gradient(
       rgba(255, 250, 240, 0.85),
       rgba(255, 250, 240, 0.85)
     ),
     url("wedding bg.jpeg");
 
-  background-size: cover;
-  background-position: center;
+  background-size: contain;          /* KEY CHANGE */
+  background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-color: #f6efe6;         /* fallback color */
 
   display: flex;
   justify-content: center;
