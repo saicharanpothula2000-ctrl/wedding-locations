@@ -47,6 +47,18 @@ body {
     max-width: 92%;
   }
 }
+/* MOBILE: move card slightly up so bg is visible */
+@media (max-width: 768px) {
+
+  body {
+    align-items: flex-start;   /* stop strict centering */
+    padding-top: 6vh;          /* move card up */
+  }
+
+  .container {
+    margin-top: 0;
+  }
+}
 
 
 .container {
@@ -124,3 +136,4 @@ h1 {
   </div>
 </body>
 </html>
+
