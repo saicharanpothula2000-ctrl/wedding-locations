@@ -25,16 +25,42 @@ body {
   padding-top: 8vh;                /* Push card down */
 }
 
-  @media (max-width: 768px) {
+ @media (max-width: 768px) {
+
   body {
     background-position: center top;
-    padding-top: 5vh;
+    background-size: contain;   /* FULL image visible on mobile */
+    padding-top: 2vh;
   }
 
   .container {
-    padding: 30px 22px;
+    background: rgba(255, 255, 255, 0.85); /* more transparent */
+    padding: 24px 18px;                    /* reduce height */
+    border-radius: 16px;
+    max-width: 92%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    margin-bottom: 18px;
+  }
+
+  .button {
+    padding: 14px;
+    font-size: 16px;
+    margin: 14px auto;
+  }
+
+  .footer {
+    font-size: 13px;
+    margin-top: 18px;
   }
 }
+
   
 .container {
   background: rgba(255, 255, 255, 0.92); /* Card-only background */
@@ -111,6 +137,7 @@ h1 {
   </div>
 </body>
 </html>
+
 
 
 
